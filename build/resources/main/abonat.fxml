@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountController">
+   <children>
+      <TableView fx:id="tableView" layoutX="12.0" layoutY="65.0" prefHeight="238.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="tableColumnTitlu" prefWidth="234.0" text="Titlu" />
+          <TableColumn fx:id="tableColumnAutor" minWidth="0.0" prefWidth="197.0" text="Autor" />
+            <TableColumn fx:id="tableColumnNrExemplare" prefWidth="146.0" text="Nr exemplare" />
+        </columns>
+      </TableView>
+      <Button layoutX="245.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleImprumuta" prefHeight="38.0" prefWidth="113.0" text="Imprumuta carte" />
+      <Label layoutX="176.0" layoutY="14.0" text="Selectati o carte din tabel">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

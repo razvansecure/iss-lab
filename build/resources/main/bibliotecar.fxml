@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="555.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BibliotercarController">
+   <children>
+      <TableView fx:id="tableViewUsers" layoutX="22.0" layoutY="94.0" prefHeight="252.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNume" prefWidth="103.0" text="Nume" />
+            <TableColumn fx:id="tableColumnCNP" prefWidth="88.0" text="CNP" />
+            <TableColumn fx:id="tableColumnAdresa" prefWidth="83.0" text="Adresa" />
+            <TableColumn fx:id="tableColumnTelefon" prefWidth="106.0" text="Telefon" />
+        </columns>
+      </TableView>
+      <Label layoutX="78.0" layoutY="53.0" text="Selectati un abonat" />
+      <TableView fx:id="tableViewImprumut" layoutX="446.0" layoutY="94.0" prefHeight="252.0" prefWidth="307.0">
+        <columns>
+          <TableColumn fx:id="tableColumnTitlu" prefWidth="104.0" text="Titlu" />
+          <TableColumn fx:id="tableColumnAutor" prefWidth="99.0" text="Autor" />
+            <TableColumn fx:id="tableColumnDataImprumut" prefWidth="103.0" text="Data imprumut" />
+        </columns>
+      </TableView>
+      <Label layoutX="509.0" layoutY="53.0" text="Selectati cartile returnate" />
+      <Button layoutX="525.0" layoutY="381.0" mnemonicParsing="false" onAction="#returnareCarti" prefHeight="58.0" prefWidth="149.0" text="Returnare carti" />
+      <Button layoutX="147.0" layoutY="381.0" mnemonicParsing="false" onAction="#showImprumuturi" prefHeight="58.0" prefWidth="132.0" text="Afisati imprumuturile" />
+      <TextField fx:id="textFieldTitlu" layoutX="43.0" layoutY="489.0" />
+      <Label layoutX="11.0" layoutY="493.0" text="Titlu" />
+      <Label layoutX="213.0" layoutY="493.0" text="Autor" />
+      <TextField fx:id="textFieldAutor" layoutX="254.0" layoutY="489.0" />
+      <Label layoutX="418.0" layoutY="493.0" text="Nr. exemplare" />
+      <TextField fx:id="textFieldExemplare" layoutX="501.0" layoutY="489.0" />
+      <Button layoutX="674.0" layoutY="489.0" mnemonicParsing="false" onAction="#handleAddCarte" text="Add carte" />
+   </children>
+</AnchorPane>
